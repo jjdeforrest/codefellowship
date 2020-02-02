@@ -2,54 +2,93 @@ package com.example.codefellowship.controllers;
 
 
 
-import com.example.codefellowship.models.ApplicationUser;
-import com.example.codefellowship.models.ApplicationUserRepository;
+import com.example.codefellowship.models.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import org.springframework.web.servlet.view.RedirectView;
 import java.security.Principal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class ApplicationUserController {
 
-    @Autowired
-    ApplicationUserRepository applicationUserRepository;
+//    @Autowired
+//    public CommentRepository commentRepository;
+
 
     @Autowired
-    private PasswordEncoder passwordEncoder;
+    public ApplicationUserRepository applicationUserRepository;
 
-    @PostMapping("/signup")
-    public RedirectView createNewApplicationUser(String username, String password, String dateOfBirth, String bio, String firstName, String lastName) {
-        System.out.println("You are adding a user");
-        ApplicationUser newUser = new ApplicationUser(username, passwordEncoder.encode(password), dateOfBirth, bio, firstName, lastName);
+    @Autowired
+    public PasswordEncoder passwordEncoder;
+
+    @PostMapping("/join")
+    public RedirectView createUser(String firstName, String lastName, String dateOfBirth, String bio, String username, String password) {
+        ApplicationUser newUser = new ApplicationUser(username, passwordEncoder.encode(password), firstName, lastName, dateOfBirth, bio);
         applicationUserRepository.save(newUser);
-        return new RedirectView("/");
+        Authentication authentication = new UsernamePasswordAuthenticationToken(newUser, null, new ArrayList<>());
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        return new RedirectView("/myprofile");
     }
 
     @GetMapping("/login")
-    public String showLoginForm() {
+    public String loginForm() {
+
         return "login";
     }
 
-
-    @GetMapping("/signup")
-    public String showSignup() {
-        return "signup";
+    @PostMapping("/login")
+    public RedirectView authententicatedUser(Principal p) {
+        if (p != null) {
+            ApplicationUser loggedUser = applicationUserRepository.findByUsername(p.getName());
+            return new RedirectView("/user/" + loggedUser.getId());
+        } else {
+            return new RedirectView("/login");
+        }
     }
 
-    @GetMapping("/profile")
-    public String getHome(Principal p, Model m) {
+    @GetMapping("/myprofile")
+    public RedirectView getLoggedInUsersId(Principal p, Model m) {
+        ApplicationUser loggedInUser = applicationUserRepository.findByUsername(p.getName());
+        return new RedirectView("/user/" + loggedInUser.id);
+    }
 
-        if (p != null) {
-            m.addAttribute("username", p.getName());
-        }
-
+    @GetMapping("/user/{id}")
+    public String userDetails(@PathVariable Long id, Principal p, Model m) {
+        ApplicationUser user = applicationUserRepository.findById(id).get();
+        m.addAttribute("user", user);
+        m.addAttribute("principal", p.getName());
         return "profile";
     }
 
 
+    @ControllerAdvice
+    public class RestResponseEntityExceptionHandler
+            extends ResponseEntityExceptionHandler {
+
+        @ExceptionHandler(value
+                = {IllegalArgumentException.class, IllegalStateException.class})
+        protected ResponseEntity<Object> handleConflict(
+                RuntimeException ex, WebRequest request) {
+            String bodyOfResponse = "This should be application specific";
+            return handleExceptionInternal(ex, bodyOfResponse,
+                    new HttpHeaders(), HttpStatus.CONFLICT, request);
+        }
+    }
+
 }
+
+
