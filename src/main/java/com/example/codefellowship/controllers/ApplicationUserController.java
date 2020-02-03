@@ -25,8 +25,8 @@ import java.util.List;
 @Controller
 public class ApplicationUserController {
 
-//    @Autowired
-//    public CommentRepository commentRepository;
+    @Autowired
+    public CommentRepository commentRepository;
 
 
     @Autowired
@@ -71,8 +71,19 @@ public class ApplicationUserController {
         ApplicationUser user = applicationUserRepository.findById(id).get();
         m.addAttribute("user", user);
         m.addAttribute("principal", p.getName());
+        m.addAttribute("comment",commentRepository);
         return "profile";
     }
+
+    @PostMapping("/newComment")
+    public RedirectView createNewPost(String body, Principal p){
+        Comment newComment = new Comment(body);
+        ApplicationUser loggedInUser = applicationUserRepository.findByUsername(p.getName());
+        newComment.applicationUser = loggedInUser;
+        commentRepository.save(newComment);
+        return new RedirectView("/myprofile");
+    }
+
 
 
     @ControllerAdvice
