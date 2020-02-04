@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.codefellowship.CodefellowshipApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-02T18:50:33" hostname="38f9d3619e51.ant.amazon.com" time="0.014">
+<testsuite name="com.example.codefellowship.CodefellowshipApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-04T17:29:42" hostname="38f9d3619e51.ant.amazon.com" time="0.022">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.codefellowship.CodefellowshipApplicationTest" time="0.014"/>
+  <testcase name="contextLoads()" classname="com.example.codefellowship.CodefellowshipApplicationTest" time="0.022"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

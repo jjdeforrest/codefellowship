@@ -19,7 +19,7 @@ public class HomeController {
 
     @GetMapping("/sign-up")
     public String signUp() {
-        return "signup";
+        return "sign-up";
     }
 
 }

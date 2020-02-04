@@ -75,30 +75,9 @@ public class ApplicationUserController {
         return "profile";
     }
 
-    @PostMapping("/newComment")
-    public RedirectView createNewPost(String body, Principal p){
-        Comment newComment = new Comment(body);
-        ApplicationUser loggedInUser = applicationUserRepository.findByUsername(p.getName());
-        newComment.applicationUser = loggedInUser;
-        commentRepository.save(newComment);
-        return new RedirectView("/myprofile");
-    }
 
 
 
-    @ControllerAdvice
-    public class RestResponseEntityExceptionHandler
-            extends ResponseEntityExceptionHandler {
-
-        @ExceptionHandler(value
-                = {IllegalArgumentException.class, IllegalStateException.class})
-        protected ResponseEntity<Object> handleConflict(
-                RuntimeException ex, WebRequest request) {
-            String bodyOfResponse = "This should be application specific";
-            return handleExceptionInternal(ex, bodyOfResponse,
-                    new HttpHeaders(), HttpStatus.CONFLICT, request);
-        }
-    }
 
 }
 
