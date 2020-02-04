@@ -7,26 +7,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/controllers/ApplicationUserController$RestResponseEntityExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/config/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/controllers/ApplicationUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/controllers/ApplicationUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/controllers/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.codefellowship.CodefellowshipApplicationTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.codefellowship.CodefellowshipApplicationTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.codefellowship.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.codefellowship.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/codefellowship/controllers/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.codefellowship.CodefellowshipApplicationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.codefellowship.CodefellowshipApplicationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codefellowship/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codefellowship/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codefellowship/controllers/ApplicationUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codefellowship/controllers/ApplicationUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codefellowship/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codefellowship/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,45 +252,45 @@
     </state>
     <state x="-1206" y="312" width="704" height="456" key="EnvironmentVariablesDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580586490910" />
     <state x="2154" y="312" key="EnvironmentVariablesDialog/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580837745479" />
-    <state width="1878" height="260" key="GridCell.Tab.0.bottom" timestamp="1580838019907">
+    <state width="1878" height="260" key="GridCell.Tab.0.bottom" timestamp="1580838720479">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="164" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580594883359" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1580837566938" />
-    <state width="1878" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838019907" />
+    <state width="1878" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838720479" />
     <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.33.1920.1080@1440.33.1920.1080" timestamp="1580584953926" />
     <state width="1878" height="164" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580705361650" />
     <state width="1878" height="431" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580592122383" />
     <state width="1878" height="260" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580837765624" />
     <state width="1878" height="164" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580706197743" />
-    <state width="1878" height="260" key="GridCell.Tab.0.center" timestamp="1580838019906">
+    <state width="1878" height="260" key="GridCell.Tab.0.center" timestamp="1580838720478">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="164" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580594883357" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1580837566936" />
-    <state width="1878" height="260" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838019906" />
+    <state width="1878" height="260" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838720478" />
     <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1440.900/1440.33.1920.1080@1440.33.1920.1080" timestamp="1580584953914" />
     <state width="1878" height="164" key="GridCell.Tab.0.center/0.0.1440.900/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580705361648" />
     <state width="1878" height="431" key="GridCell.Tab.0.center/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580592122382" />
     <state width="1878" height="260" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580837765622" />
     <state width="1878" height="164" key="GridCell.Tab.0.center/0.23.1440.877/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580706197741" />
-    <state width="1878" height="260" key="GridCell.Tab.0.left" timestamp="1580838019905">
+    <state width="1878" height="260" key="GridCell.Tab.0.left" timestamp="1580838720476">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="164" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580594883356" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1580837566935" />
-    <state width="1878" height="260" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838019905" />
+    <state width="1878" height="260" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838720476" />
     <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1440.900/1440.33.1920.1080@1440.33.1920.1080" timestamp="1580584953909" />
     <state width="1878" height="164" key="GridCell.Tab.0.left/0.0.1440.900/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580705361647" />
     <state width="1878" height="431" key="GridCell.Tab.0.left/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580592122382" />
     <state width="1878" height="260" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580837765621" />
     <state width="1878" height="164" key="GridCell.Tab.0.left/0.23.1440.877/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580706197740" />
-    <state width="1878" height="260" key="GridCell.Tab.0.right" timestamp="1580838019906">
+    <state width="1878" height="260" key="GridCell.Tab.0.right" timestamp="1580838720479">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="164" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580594883358" />
     <state width="1398" height="260" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1580837566937" />
-    <state width="1878" height="260" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838019906" />
+    <state width="1878" height="260" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1580838720479" />
     <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1440.900/1440.33.1920.1080@1440.33.1920.1080" timestamp="1580584953921" />
     <state width="1878" height="164" key="GridCell.Tab.0.right/0.0.1440.900/1440.49.1920.1080@1440.49.1920.1080" timestamp="1580705361649" />
     <state width="1878" height="431" key="GridCell.Tab.0.right/0.23.1440.877/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1580592122383" />
